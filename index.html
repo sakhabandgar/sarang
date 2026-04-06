@@ -1,0 +1,34 @@
+<!-- ===================== INDEX.HTML ===================== -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>E-Commerce</title>
+  <link rel="stylesheet" href="style.css">
+  <linkhref="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <title>Best Online Store | Buy Shoes, Shirts & Electronics</title>
+  <meta name="description" content="Buy best shoes, shirts, electronics at affordable prices">
+  <meta name="keywords" content="shoes, shirts, electronics, ecommerce, online shopping">
+  <meta name="author" content="Your Name">
+</head>
+<body>
+
+<h1>My Store</h1>
+<input type="text" id="search" placeholder="Search products..." onkeyup="searchProduct()">
+<div style="text-align:center; margin:20px;">
+  <input type="email" id="email" placeholder="Enter your email">
+  <button onclick="subscribe()">Subscribe</button>
+</div>
+<div style="text-align:center;">
+  <button onclick="filterCategory('all')">All</button>
+  <button onclick="filterCategory('clothing')">Clothing</button>
+  <button onclick="filterCategory('electronics')">Electronics</button>
+</div>
+
+<div id="product-grid"></div>
+
+<a href="cart.html">View Cart</a>
+
+<script src="script.js"></script>
+</body>
+</html>

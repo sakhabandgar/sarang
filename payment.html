@@ -1,0 +1,28 @@
+<!-- ===================== PAYMENT.HTML ===================== -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Payment</title>
+</head>
+<body>
+
+<h1>Payment</h1>
+
+<select>
+  <option>UPI</option>
+  <option>Card</option>
+  <option>Cash on Delivery</option>
+</select>
+
+<button onclick="pay()">Pay Now</button>
+
+<script>
+function pay() {
+  alert("Payment Successful!");
+  localStorage.removeItem("cart");
+  window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+/* ===== GLOBAL ===== */
+body {
+  font-family: 'Noto Sans', Arial, sans-serif;
+  margin: 0;
+  background: #f4f6f9;
+}
+
+/* ===== HEADER ===== */
+h1 {
+  text-align: center;
+  padding: 20px;
+  background: #2c3e50;
+  color: white;
+  margin: 0;
+}
+
+/* ===== SEARCH BAR ===== */
+#search {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  width: 60%;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+/* ===== FILTER BUTTONS ===== */
+div button {
+  margin: 10px 5px;
+  padding: 10px 15px;
+  border: none;
+  background: #3498db;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+div button:hover {
+  background: #2980b9;
+}
+
+/* ===== PRODUCT GRID ===== */
+#product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* ===== PRODUCT CARD ===== */
+.product {
+  background: white;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== PRODUCT IMAGE ===== */
+.product img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+}
+
+/* ===== PRICE ===== */
+.product p {
+  font-weight: bold;
+  color: #27ae60;
+}
+
+/* ===== BUTTON ===== */
+.product button {
+  background: #27ae60;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.product button:hover {
+  background: #1e8449;
+}
+
+/* ===== CART LINK ===== */
+a {
+  display: block;
+  text-align: center;
+  margin: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #2c3e50;
+}

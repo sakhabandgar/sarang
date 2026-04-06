@@ -1,0 +1,64 @@
+<!-- ===================== CART.HTML ===================== -->
+<h1>Your Cart</h1>
+<div id="cart-items"></div>
+<h3 id="total"></h3>
+
+<button onclick="checkout()">Proceed to Payment</button>
+
+<script>
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+function loadCart() {
+  let div = document.getElementById("cart-items");
+  let total = 0;
+  div.innerHTML = "";
+
+  cart.forEach(item => {
+    div.innerHTML += `
+      <p>
+        ${item.name} - ₹${item.price} x ${item.qty}
+      </p>
+    `;
+    total += item.price * item.qty;
+  });
+
+  document.getElementById("total").innerText = "Total: ₹" + total;
+}
+function checkout() {
+  window.location.href = "payment.html";
+}
+
+loadCart();
+</script>
+</body>
+</html>
+
+
+<!-- ===================== PAYMENT.HTML ===================== -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Payment</title>
+</head>
+<body>
+
+<h1>Payment</h1>
+
+<select>
+  <option>UPI</option>
+  <option>Card</option>
+  <option>Cash on Delivery</option>
+</select>
+
+<button onclick="pay()">Pay Now</button>
+
+<script>
+function pay() {
+  alert("Payment Successful!");
+  localStorage.removeItem("cart");
+  window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>
