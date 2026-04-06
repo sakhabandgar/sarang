@@ -1,12 +1,12 @@
 <!-- ===================== SCRIPT.JS ===================== -->
 let products = [
-  {id:1, name:"Shoes", price:1000, image:"img/shoes.jpg", category:"clothing"},
-  {id:2, name:"Shirt", price:500, image:"img/shirt.jpg", category:"clothing"},
-  {id:3, name:"Watch", price:2000, image:"img/watch.jpg", category:"clothing"},
+  {id:1, name:"Shoes", price:1000, image:"shoes.jpg", category:"clothing"},
+  {id:2, name:"Shirt", price:500, image:"shirt.jpg", category:"clothing"},
+  {id:3, name:"Watch", price:2000, image:"watch.jpg", category:"clothing"},
 
-  {id:4, name:"Laptop", price:50000, image:"img/laptop.jpg", category:"electronics"},
-  {id:5, name:"Smartphone", price:20000, image:"img/phone.jpg", category:"electronics"},
-  {id:6, name:"Headphones", price:2000, image:"img/headphones.jpg", category:"electronics"}
+  {id:4, name:"Laptop", price:50000, image:"laptop.jpg", category:"electronics"},
+  {id:5, name:"Smartphone", price:20000, image:"phone.jpg", category:"electronics"},
+  {id:6, name:"Headphones", price:2000, image:"headphones.jpg", category:"electronics"}
 ];
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
